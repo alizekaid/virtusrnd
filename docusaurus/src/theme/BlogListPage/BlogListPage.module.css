@@ -1,0 +1,125 @@
+.blogMain {
+  padding: 2rem 0;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--ifm-section-title);
+}
+
+.blogGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: var(--ifm-card-background);
+  border: 1px solid var(--ifm-card-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 1.5rem;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.cardTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  color: var(--ifm-section-title);
+}
+.cardDesc {
+  color: var(--ifm-text-tertiary);
+  margin-bottom: 1rem;
+}
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--ifm-text-secondary);
+  margin-bottom: 1rem;
+}
+.cardAuthor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.authorImg {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.readMore {
+  margin-top: auto;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.readMore:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.blogMainWithSidebar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.sidebar {
+  flex: 0 0 240px;
+  background: var(--ifm-background);
+  border-right: 1px solid var(--ifm-card-border);
+  padding: 1.5rem 1rem;
+  min-height: 100vh;
+}
+.sidebarTitle {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--ifm-section-title);
+}
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebarItem {
+  margin-bottom: 0.75rem;
+}
+.sidebarLink {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.sidebarLink:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.blogContentSection {
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .blogMainWithSidebar {
+    flex-direction: column;
+  }
+  .sidebar {
+    min-height: unset;
+    border-right: none;
+    border-bottom: 1px solid var(--ifm-card-border);
+    margin-bottom: 2rem;
+  }
+} 

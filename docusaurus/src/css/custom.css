@@ -1,0 +1,122 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Primary Colors */
+  --ifm-color-primary: #0f172a;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #172554;
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: #61dafb;
+  --ifm-color-primary-lighter: #d9f2eb;
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  /* Navbar */
+  --ifm-navbar-background: #0f172a;
+  --ifm-navbar-link-hover: #1d4ed8;
+  --ifm-navbar-link-active: #172554;
+  /* Footer */
+  --ifm-footer-background: #2d2d32;
+  --ifm-footer-link: rgb(175, 175, 179);
+  --ifm-footer-copyright: #fff;
+  --ifm-section-title: #18216d;
+  --ifm-linkedin: #0077b5;
+  --ifm-linkedin-hover: #005582;
+  /* Backgrounds */
+  --ifm-background: #fff;
+  --ifm-team-section-background: #f9f9f9;
+  --ifm-card-background: #fff;
+  --ifm-card-border: #e0e0e0;
+  /* Text */
+  --ifm-text-primary: #000;
+  --ifm-text-secondary: #222;
+  --ifm-text-tertiary: #666;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--ifm-navbar-background) !important;
+}
+.navbar__link {
+  color: #fff !important;
+}
+.navbar__link:hover, .navbar__link--active {
+  color: var(--ifm-navbar-link-hover) !important;
+  background: var(--ifm-navbar-link-active) !important;
+}
+.navbar__title {
+  color: #fff !important;
+}
+
+.navbar__item .navbar__link[href="/blog"] {
+  color: #fff !important;
+}
+
+/* Footer */
+.footer {
+  background: var(--ifm-footer-background) !important;
+}
+.footer__link-item {
+  color: var(--ifm-footer-link) !important;
+}
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-light) !important;
+}
+.footer__copyright {
+  color: var(--ifm-footer-copyright) !important;
+}
+
+body {
+  background: var(--ifm-background);
+  color: var(--ifm-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6, .section-title {
+  color: var(--ifm-section-title);
+}
+
+/* LinkedIn link */
+.linkedin-link {
+  color: var(--ifm-linkedin);
+}
+.linkedin-link:hover {
+  color: var(--ifm-linkedin-hover);
+}
+
+/* Card styles */
+.card, .featureCard {
+  background: var(--ifm-card-background);
+  border: 1px solid var(--ifm-card-border);
+  color: var(--ifm-text-secondary);
+}
+
+/* Team section */
+.team-section {
+  background: var(--ifm-team-section-background);
+}
+
+/* Button styles (e.g., NotFound page) */
+.button, .notfound-btn {
+  background: #d9f2eb;
+  color: #18216d;
+  border: none;
+  transition: background 0.2s;
+}
+.button:hover, .notfound-btn:hover {
+  background: #8db2dc;
+}
