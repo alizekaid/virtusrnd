@@ -20,7 +20,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: false,
         blog: {
           showReadingTime: true,
-          routeBasePath: process.env.NODE_ENV === 'development' ? '/' : '/blog',
+          routeBasePath: process.env.NODE_ENV === 'development' ? '/' : '/blog', 
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
