@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[141],{9578:e=>{e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/artificial-intelligence","name":"Artificial Intelligence","count":2,"permalink":"/blog/tags/artificial-intelligence"}')}}]);
